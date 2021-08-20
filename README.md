@@ -1,3 +1,9 @@
+# workflows
+
+[![Strapi CI](https://github.com/FominSergiy/hexlet-ci/actions/workflows/workflow.yml/badge.svg)](https://github.com/FominSergiy/hexlet-ci/actions/workflows/workflow.yml)
+
+
+
 # CI
 
 В этом задании мы настроим CI для приложения на базе Github Actions.
