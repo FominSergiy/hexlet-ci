@@ -17,8 +17,8 @@ jobs:
           node-version: 14.x
 
     # run our little test
-      - name: run test.js
+      - name: run Makefile
         run: |
-          npx jest tests/root.test.js
+          make test
 
 
