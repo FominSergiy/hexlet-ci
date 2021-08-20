@@ -1,0 +1,24 @@
+name: Strapi CI
+
+on:
+  - push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # checkout / clone our repo to the runner
+      - uses: actions/checkout@v2
+
+      # get node 14.x -- version required for the app
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+
+    # run our little test
+      - name: run test.js
+        run: |
+          npx jest tests/root.test.js
+
+
